@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+.btn {
+  background-color: #FFC0CB;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+
+
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.btn:hover {background: #e75480;}
+
+body {
+
+  font-family: 'Arial', monospace;
+
+}
+</style>
+<body>
+
+<h1 style = "text-align: center;font-style: italic;">Compliment Generator</h1>
+<h2 style = "text-align: center;color:#FFC0CB;font-size: 50px;">❤</h2>
+
+<br>
+<br>
+<br>
+<br>
+
+<p id="demo" style = "text-align: center;font-size: 30px;"></p>
+<br>
+<button class="btn" onclick = chooseReason()>click 4 compliment!</button>
+
+<script>
+function chooseReason() {
+  var myArray = [
+  "you have spectacular eyes",
+  "you seem like you have good taste in music",
+  "you're a smart cookie",
+  "you are awesome",
+  "i like your outfit",
+  "you have a nice laugh",	
+  "you are appreciated",
+  "you're inspiring",
+  "you have cute elbows",
+  "i bet kittens really like you",
+  "you're so funny",
+  "i'm glad you're here",
+  "is that your picture next to 'charming' in the dictionary?",
+  "i believe in you",
+  "you make me happy",
+  "you have a nice voice",
+  "the world would be duller without you",
+  "your intelligence is really really impressive",
+  "you are more amazing than you realize",
+  "i'm glad you're clicking this button. i like spending time with you!",
+  "you have the cutest laugh on the planet",
+  "you have a nice nose",
+  "you seem very brave",
+  "i love your smile",
+  "on a scale from 1-10, you're an 11",
+  "you're a good listener",
+  "you look super snazzy today!",
+  "being around you makes everything better",
+  "you seem like a cool person to spend time with",
+  "you're like sunshine on a rainy day",
+  "i wish more people were like you!",
+  "you're so clever"
+];
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+document.getElementById("demo").innerHTML = randomItem;
+}
+</script>
+</body>
+</html>
